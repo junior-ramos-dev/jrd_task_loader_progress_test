@@ -7,6 +7,10 @@
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs": "jsdoc -c jsdoc.conf.json",
+    "link": "npm-run-all -s link:*",
+    "link:lib-self": "cd ../jrd_task_loader_progress && npm link",
+    "link:lib-react": "cd ../jrd_task_loader_progress && npm link ../jrd_task_loader_progress_test/node_modules/react ../jrd_task_loader_progress_test/node_modules/react-dom",
+    "link:app-to-lib": "npm link jrd_task_loader_progress --force",
     "postinstall": "patch-package"
   },
   "keywords": [],
@@ -34,7 +38,6 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-spinners": "^0.14.1",
-    "typescript": "^5.6.3",
     "web-vitals": "^4.2.1"
   },
   "devDependencies": {
