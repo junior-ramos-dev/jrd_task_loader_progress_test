@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": [
+      "es5", "es6", "ES2021", "dom",
+    ],
+    "baseUrl" : ".",
+    "paths": {
+      "react": ["./node_modules/@types/react"],
+      //App Modules Aliases
+      "@/*": ["./src/*"],
+      "@assets/*": ["./assets/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@models/*": ["./models/*"],
+      "@services/*": ["./services/*"],
+      "@settings/*": ["./settings/*"],
+      "@styles/*": ["./styles/*"],
+      "@ui/*": ["./ui/*"],
+      "@utils/*": ["./utils/*"],
+
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types"],  // "typeRoots": [] -> won't work
+    "types": ["node"],                      // "types": [] -> won't work
+    },
+    "include": ["src", "scripts", "react-app-env.d.ts"],
+    "exclude": ["node_modues"]
+}
