@@ -68,6 +68,7 @@ const RegisterLoaderPage = () => {
         returnData={getData}
         request={request}
         totalTasks={8}
+        fetchInterval={1500}
       >
         <RingProgressBar />
       </TaskLoaderProgress>
