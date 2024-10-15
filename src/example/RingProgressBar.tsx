@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { TaskLoaderProgressContext } from "jrd_task_loader_progress";
 import { RingLoader } from "react-spinners";
 
 import {
@@ -8,8 +9,6 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-
-import { TaskLoaderProgressContext } from "../../node_modules/jrd_task_loader_progress/dist";
 
 // Return the message for each step
 export const STEP_MSG_MAP: Record<number, string> = {

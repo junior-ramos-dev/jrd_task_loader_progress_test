@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { TaskLoaderProgress } from "jrd_task_loader_progress";
 
 import {
   Box,
@@ -10,7 +11,6 @@ import {
   Typography,
 } from "@mui/material";
 
-import { TaskLoaderProgress } from "../../node_modules/jrd_task_loader_progress/dist";
 import AuthRepository, {
   IRegisterRequest,
   User,
